@@ -1,5 +1,5 @@
 Name:           gnocky
-Version:        0.0.3
+Version:        0.0.4
 Release:        %mkrel 1
 Summary:        Mobile phone utility application
 
@@ -9,7 +9,7 @@ URL:            http://sourceforge.net/projects/gnocky/
 Source0:        http://gnokii.org/download/gnocky/%{name}-%{version}.tar.bz2
 Source1:        %{name}.desktop
 Patch0:         %{name}-datadir.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires:  gettext, gnokii-devel >= 0.6.2, libglade2.0-devel
 BuildRequires:  desktop-file-utils
@@ -23,7 +23,7 @@ the Gnokii project.
 
 %prep
 %setup -q
-%patch0 -p1
+#%patch0 -p1
 sed 's|__ICON__|%{_datadir}/gnocky/glade/cellphone.png|' \
   < %{SOURCE1} > %{name}.desktop
 
