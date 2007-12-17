@@ -9,7 +9,6 @@ URL:            http://sourceforge.net/projects/gnocky/
 Source0:        http://gnokii.org/download/gnocky/%{name}-%{version}.tar.bz2
 Source1:        %{name}.desktop
 Patch0:         %{name}-datadir.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires:  gettext, gnokii-devel >= 0.6.2, libglade2.0-devel
 BuildRequires:  desktop-file-utils
