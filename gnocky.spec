@@ -1,6 +1,6 @@
 Name:           gnocky
 Version:        0.0.6
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        Mobile phone utility application
 
 Group:          Communications
