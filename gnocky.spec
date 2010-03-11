@@ -1,6 +1,6 @@
 Name:           gnocky
 Version:        0.0.7
-Release:        %mkrel 2
+Release:        %mkrel 3
 Summary:        Mobile phone utility application
 
 Group:          Communications
@@ -23,7 +23,7 @@ the Gnokii project.
 %setup -q
 
 %build
-%configure --disable-rpath --disable-dependency-tracking
+%configure2_5x --disable-rpath --disable-dependency-tracking
 %make
 
 %install
