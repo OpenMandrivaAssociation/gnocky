@@ -5,7 +5,7 @@ Summary:        Mobile phone utility application
 
 Group:          Communications
 License:        GPL
-URL:            http://sourceforge.net/projects/gnocky/
+URL:            https://sourceforge.net/projects/gnocky/
 Source0:        http://gnokii.org/download/gnocky/%{name}-%{version}.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
